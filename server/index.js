@@ -21,7 +21,7 @@ app.use('/admin', adminRouter); // This should point to adminRouter
 app.use(express.static('Public'))
 
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port,() =>{
     console.log("Server is Running");
