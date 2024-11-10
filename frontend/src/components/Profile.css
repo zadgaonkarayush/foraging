@@ -1,0 +1,115 @@
+.profilecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    background-color: #e6f7e6;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.profile-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .profile-back-button, .edit-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+.profile-details input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1rem;
+  }
+
+.change-password, .profile-logout, .profile-update{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .change-password button, .logout-button,.update-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .change-password button {
+    color: green;
+    background-color: #e6f7e6;
+  }
+  
+  .logout-button {
+    color: red;
+    background-color: white;
+  }
+  .update-button{
+   background-color:#048d32b5;
+   color:white;
+  }
+
+  .logout-modal{
+    position: fixed;
+    top:300px;
+    left:400px;
+    width:600px;
+    height:200px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(77, 183, 154, 0.5) ;
+  }
+  .logout-Modal-Content h2{
+    color:black;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .logout-Modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .logout-Modal-buttons button {
+    padding: 10px 20px;
+    cursor:pointer;
+  }
+  .yes-btn{
+    color:white;
+    background-color:green ;
+  }
+  .cancel-btn{
+    color:white;
+    background-color:red ;
+  }
+    @media (min-width: 768px) {
+    .profile-container {
+      max-width: 400px;
+      margin: auto;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }

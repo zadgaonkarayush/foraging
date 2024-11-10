@@ -1,0 +1,66 @@
+/* Modal container styles */
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Center the logo */
+  .modal-logo img {
+    width: 120px; /* Adjust the size as needed */
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  
+  /* Green heading */
+  .modal-body h2 {
+    color: #009444;
+    font-size: 34px; /* Adjust font size */
+    margin-bottom: 10px;
+  }
+  
+  /* Modal paragraph */
+  .modal-body p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .modal-btn {
+    width:100%;
+    background-color: rgba(0, 148, 68, 1);
+    color: white;
+    padding:  15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .modal-btn:hover {
+    background-color: #026a33;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    /* Mobile-specific styles */
+    .modal-body h2 {
+      font-size: 20px;
+    }
+  
+    .modal-body p {
+      font-size: 14px;
+    }
+  
+    .modal-logo img {
+      width: 80px;
+    }
+  
+    .modal-btn {
+      padding: 8px 16px;
+    }
+  }
+  

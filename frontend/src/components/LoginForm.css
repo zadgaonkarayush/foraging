@@ -1,0 +1,213 @@
+/* Desktop Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 40px; /* Increased padding for more space */
+  text-align: center;
+}
+
+.logo-login{
+  height: 120px;
+  width: 120px;
+  margin-bottom: 20px; /* Space between logo and heading */
+}
+
+h1 {
+  font-size: 32px; /* Increased font size for better visibility on larger screens */
+  margin-bottom: 30px;
+}
+
+.form-container {
+  background-color: #DBF7E5;
+  padding: 40px; /* Increased padding for a more spacious form */
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px; /* Increased max-width for larger screens */
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Slightly larger shadow for a more pronounced effect */
+}
+
+h2 {
+  font-size: 24px; /* Larger font size for headings */
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 16px; /* Larger font size for better readability */
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.Register {
+  color: #0a520c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Register:hover {
+  text-decoration: underline;
+}
+
+.input-group {
+  display: flex;
+    /* align-items: center; */
+    padding: 8px 12px;
+    background-color: #fff;
+    border-radius: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+
+.forgot-password {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #002a8c;
+  font-size: 16px; /* Larger font size for better readability */
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.signin-button {
+  width: 100%;
+  padding: 15px; /* Increased padding for a more prominent button */
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px; /* Larger font size for the button text */
+  cursor: pointer;
+  background-color: #04862d;
+  margin-bottom: 30px;
+}
+
+.signin-button:hover {
+  background-color: #45a049;
+}
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width:100%;
+}
+.required {
+  color: red;
+}
+
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 15px 40px; /* Increased padding for more height and space */
+  border: none;
+  border-radius: 5px;
+  font-size: 18px; /* Increased font size for consistency with the button */
+  box-sizing: border-box;
+}
+
+
+input[type="email"]:focus, input[type="password"]:focus {
+  outline: none;
+  border-color: none;
+}
+
+.image-icon {
+  position: absolute;
+  left: 15px; /* Increased space between icon and text */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px; /* Adjust size as needed */
+  height: 25px; /* Adjust size as needed */
+}
+
+@media(max-width:768px){
+  .login-container{
+    padding:20px;
+  }
+  .logo-login{
+   height:100px;
+   width:100px;
+  }
+  h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .form-container{
+    padding: 30px;
+    max-width:90%;
+  }
+  h2{
+    font-size: 20px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .input-group{
+    margin-bottom: 20px;
+  }
+  input[type="email"],input[type="password"]{
+      padding:10px;
+      font-size:14px;
+  }
+  .forgot-password{
+    font-size: 14px;
+  }
+  .signin-button{
+    padding:12px;
+    font-size:16px;
+  }
+}
+@media(max-width:480px){
+  .login-container{
+    padding:10px;
+  }
+  .logo-login{
+   height:80px;
+   width:80px;
+  }
+  h1{
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .form-container{
+    padding: 20px;
+    max-width:100%;
+  }
+  h2{
+    font-size: 18px;
+  }
+  p{
+    font-size: 12px;
+  }
+  .input-group{
+    margin-bottom: 15px;
+  }
+  input[type="email"],input[type="password"]{
+      padding:8px;
+      font-size:12px;
+  }
+  .forgot-password{
+    font-size: 12px;
+  }
+  .signin-button{
+    padding:10px;
+    font-size:14px;
+  }
+}
