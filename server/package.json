@@ -18,8 +18,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
     "start": "nodemon index.js",
     "postinstall": "npm rebuild bcrypt --build-from-source",
+=======
+    "start": "node index.js",
+     "postinstall": "npm rebuild bcrypt --build-from-source",
+>>>>>>> 1d73fd8f9eb339a7a8b2530f83d4679199963ea1
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
